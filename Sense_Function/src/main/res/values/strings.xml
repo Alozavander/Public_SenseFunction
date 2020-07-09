@@ -1,0 +1,287 @@
+<resources>
+    <string name="app_name">WeSense</string>
+    <string name="title_home">首页</string>
+    <string name="title_map">地图</string>
+    <string name="title_mine">我的</string>
+    <string name="title_publish">发布</string>
+    <string name="title_remind">提醒</string>
+    <string name="search_home_hint">搜索好任务</string>
+    <string name="sao1sao_home">扫一扫</string>
+    <string name="task_kind_dialogtitle">任务类型</string>
+    <string name="task_frequency_dialogtitle">任务频率</string>
+    <string name="task_uploadMode_dialogtitle">任务上传模式</string>
+    <string name="home_grid_0">公共安全</string>
+    <string name="home_grid_1">环境调研</string>
+    <string name="home_grid_2">民生日常</string>
+    <string name="home_grid_3">商业应用</string>
+    <string name="home_grid_4">普通任务</string>
+    <string name="home_search">搜索</string>
+    <string name="home_toast_data_fail">未成功获取数据</string>
+    <string name="home_toast_data_update1">更新了 </string>
+    <string name="home_toast_data_update2"> 个任务</string>
+    <string name="fragment_mine_funclist_published">已发布任务</string>
+    <string name="fragment_mine_funclist_received">已接受任务</string>
+    <string name="fragment_mine_funclist_favorite">我的收藏</string>
+    <string name="fragment_mine_funclist_wallet">我的钱包</string>
+    <string name="fragment_mine_funclist_promotion">我的推广</string>
+    <string name="fragment_mine_funclist_notificaiton">消息通知</string>
+    <string name="fragment_mine_funclist_setting">设置</string>
+
+    <string-array name="task_kinds">
+        <item>公共安全</item>
+        <item>环境调研</item>
+        <item>民生日常</item>
+        <item>商业应用</item>
+        <item>其他</item>
+    </string-array>
+    <string-array name="task_frequency">
+        <item>3次/日</item>
+        <item>1次/日</item>
+        <item>1次/周</item>
+    </string-array>
+    <string-array name="task_uploadMode">
+        <item>实时上传</item>
+        <item>后台上传</item>
+    </string-array>
+
+    <string name="title_activity_2rd_page">activity_2rd_page</string>
+    <string name="title_activity_search">activity_search</string>
+    <string name="title_activity_login">Activity_login</string>
+    <string name="action_settings">设置</string>
+
+
+    <!--登录-->
+    <string name="login">登录</string>
+    <string name="login_input_username_hint">用户名：字母开头，字母数字组合4-16位</string>
+    <string name="hint_password">密码：字母开头，6-18位</string>
+    <string name="login_hold_hint">自动登录</string>
+    <string name="login_forget_hint">忘记密码？</string>
+    <string name="login_register_hint">注册</string>
+    <string name="login_other_hint">其他方式登录</string>
+    <string name="login_error">账户登录错误</string>
+    <string name="register_input_username_hint">手机号</string>
+    <string name="register_username_hint">用户名</string>
+    <string name="register_sms_auth_code">短信验证码</string>
+    <string name="register_sms_hint">获取验证码</string>
+
+
+    <string name="loading_image">正在准备图片...</string>
+    <string name="register_done_hint">完成</string>
+    <string name="retrieve_pwd_step_hint">下一步</string>
+    <string name="reset_pwd_hint">请输入至少六位新密码</string>
+    <string name="register_pwd_hint">请输入至少六位数密码</string>
+    <string name="confirm">确认</string>
+    <string name="message_pwd_error">密码错误</string>
+    <string name="message_username_null">用户名未填写</string>
+    <string name="base_url">http://47.96.146.104:8889/</string>
+    <string name="intent_taskID_name">intent_taskID_name</string>
+
+    <string name="function_not_open">功能暂未开放</string>
+
+    <string name="nickname">昵称</string>
+    <string name="mobilePhone">手机</string>
+    <string name="introduction">简介</string>
+    <string name="notYetOpen">暂未开放</string>
+    <string name="loadFinish">初始化完成</string>
+    <string name="publishSuccess">发布成功</string>
+    <string name="publishFail">发布失败</string>
+    <string name="ordinaryTask">普通任务</string>
+    <string name="differentPassword">两次输入密码不相同</string>
+    <string name="format_reminder_name">用户名由字母和数字组成的4-16位字符，字母开头</string>
+    <string name="format_reminder_pwd">密码为字母、数字的组合，6-16位</string>
+    <string name="login_first">请先登录</string>
+    <string name="taskAccept">接受任务</string>
+    <string name="submitData">提交数据</string>
+    <string name="taskCompleted">已完成任务</string>
+    <string name="QueryStatusCodeFailed">user_task查询状态码失败</string>
+    <string name="AcceptTaskSuccessful">成功接受任务</string>
+    <string name="AcceptTaskFailed">接受任务失败</string>
+    <string name="FailToQueryResult">查询任务完成结果失败</string>
+    <string name="completed">完成</string>
+
+    <string name="FailToGetData">未成功获取数据</string>
+    <string name="Refresh">更新了 </string>
+    <string name="Now"> 个任务,当前列表有 </string>
+    <string name="TaskNum"> 个任务</string>
+    <string name="LoginSucceed">登录成功</string>
+    <string name="LoginFailed">登录失败,用户名或密码错误</string>
+    <string name="registeSucceed">注册成功</string>
+    <string name="registeFailed">注册失败</string>
+    <string name="InputBoxNull">输入框内容为空</string>
+    <string name="DataTableHasBeenCreated">数据表格已创建</string>
+    <string name="CreateDataBaseTableSuccessfully">成功创建数据表格</string>
+    <string name="NamePwdCantNull">用户名或密码不能为空</string>
+
+    <string name="Task_Detail_title">任务详情</string>
+    <string name="Task_Detail_taskKind">普通任务</string>
+    <string name="Task_Detail_coid">激励金：</string>
+    <string name="Task_Detail_deadline">截止日期：</string>
+
+    <string name="Task_Submit_title">任务提交</string>
+    <string name="Task_Submit_input_describe">         请输入任务完成描述</string>
+    <string name="Task_Submit_photo_choose">         请选择上传的图片</string>
+    <string name="Task_Submit_data_upload">         请选择上传数据</string>
+    <string name="Task_Submit_data_pleaseChooseData"> 请选择上传数据</string>
+    <string name="Task_Submit_audio_upload">         请选择上传的音频</string>
+    <string name="Task_Submit_video_upload">         请选择上传的视频</string>
+    <string name="Task_Submit_submit">上传</string>
+    <string name="Task_Submit_requireTask_error">获取任务ID失败</string>
+    <string name="Task_Submit_input_remind">请输入提交内容</string>
+    <string name="Task_Submit_success_remind">成功提交任务</string>
+    <string name="Task_Submit_fail_remind">提交任务失败</string>
+    <string name="Task_Submit_add_error">未成功获取目标文件</string>
+    <string name="Task_Submit_add_size_error">目标文件大于20M</string>
+
+    <string name="fragment_remind_title">任务提醒</string>
+    <string name="fragment_remind_notOpen">接口调试中</string>
+
+    <string name="notlogin">未登录</string>
+    <string name="fail_to_get_username">未获取用户名</string>
+    <string name="fail_to_load_data">加载失败</string>
+
+    <string name="fragment_publish_tip1">          请选择任务模板</string>
+
+    <!--activity_basic_taskpublish_1.xml-->
+    <string name="fragment_publish_template1">任务发布基础模板</string>
+    <string name="fragment_publish_template2">传感器任务发布模板</string>
+    <string name="fragment_publish_template1_sensors">图库 照相机</string>
+    <string name="Step_one">         步骤一</string>
+    <string name="sensor">传感器：</string>
+    <string name="camera">GPS    照相机</string>
+    <string name="task_type">任务类型：</string>
+    <string name="task_name">任务名称：</string>
+    <string name="please_enter_task_name">请输入任务名称</string>
+    <string name="bonus">总奖励金：</string>
+    <string name="enter_bonus_number">请输入任务总奖励金数目(最大为值9999)</string>
+    <string name="task_number">任务数量：</string>
+    <string name="enter_task_number">请输入任务数量(最大值为99)</string>
+    <string name="Deadline">截止时间：</string>
+    <string name="Click_to_get_date">点击选择日期</string>
+    <string name="task_details">任务描述：</string>
+    <string name="briefly_describe">请简单描述任务</string>
+    <string name="fragment_publish_title">发布任务</string>
+    <!--activity_editinfo.xml-->
+    <string name="edit">编辑</string>
+    <string name="data_edit">资料编辑</string>
+    <string name="sign_out">退出登录</string>
+    <!--activity_func_foodshare_publish.xml-->
+    <string name="share">分享</string>
+    <string name="food_describe">         美食描述</string>
+    <string name="upload_food_pic">         上传美食图片"</string>
+    <!--activity_func_sportshare.xml-->
+    <string name="measure_motion">运动测量</string>
+    <string name="current_steps">当前步数:</string>
+    <!--activity_login.xml-->
+    <string name="wrong_user">用户错误</string>
+    <!--activity_mine_minor2_accepted.xml-->
+    <string name="mine_minor2_accepted_All">全  部</string>
+    <string name="mine_minor2_accepted_processing">进行中</string>
+    <string name="mine_minor2_accepted_done">已完成</string>
+    <!--activity_mine_minor4_mywallet.xml-->
+    <string name="mine_minor4_mywallet_available_balance">可用余额(元):</string>
+    <!--activity_mine_setting_general.xml-->
+    <string name="mine_setting_general">通用</string>
+    <!--activity_mine_setting_general_multilan.xml-->
+    <string name="general_multilan_select_language">语言选择</string>
+    <!--activity_registe.xml-->
+    <string name="registe_Confirm_password_again">再次确认密码</string>
+    <!--activity_task_detail_published.xml-->
+    <string name="task_detail_published_Submitted_task_data">任务提交数据</string>
+
+    <string name="cancel">取消</string>
+    <string name="Custom_task_template">自定义任务模板</string>
+    <string name="def_taskpub_camera">照相机</string>
+    <string name="acceleration">加速度</string>
+    <string name="heart_rate">心率</string>
+    <string name="microphone">麦克风</string>
+    <string name="distance">距离</string>
+    <string name="Signature">个性签名</string>
+    <string name="Edit_information">编辑资料</string>
+    <string name="publish_task">发布任务</string>
+    <string name="recommend">推荐</string>
+    <string name="login_or_register">登录/注册</string>
+    <string name="not_login">未登录</string>
+    <string name="taskNoNew">无任务刷新</string>
+
+
+    <string name="setting_general">通用</string>
+    <string name="setting_sensorfunction">传感器感知</string>
+    <string name="setting_help_feedback">帮助与反馈</string>
+    <string name="setting_version">版本更新</string>
+    <string name="setting_general_version">语言选择</string>
+
+
+    <string name="add">添加</string>
+    <string name="permission">申请权限</string>
+    <string name="moredata">更多数据...</string>
+
+    <string name="publishTask_nullRemind">请填写完整信息</string>
+    <string name="webUrl">https://www.crowdos.cn</string>
+
+    <string name="published_Task_Detail_title">完成情况</string>
+    <string name="App_Update">应用更新</string>
+    <string name="update_message">应用已有新版本，是否更新？</string>
+    <string name="no_update_message">应用已经是最新版本.</string>
+
+    <string name="coins_rank_info">积分排名</string>
+    <string name="checkUserIcon">查看头像</string>
+    <string name="updateUserIcon">更换头像</string>
+    <string name="longitude">经度：</string>
+    <string name="latitude">纬度：</string>
+    <string name="NoneQueryResult">暂无查询结果</string>
+    <string name="pwd_format_error">密码格式不符合</string>
+
+
+    <!--activity_publish_sensortask2.xml-->
+    <string name="chooseSensors">点击选择传感器</string>
+    <string name="Sensor_TYPE_ACCELEROMETER">加速度传感器</string>
+    <string name="Sensor_TYPE_MAGNETIC_FIELD">磁场传感器</string>
+    <string name="Sensor_TYPE_ORIENTATION">方向传感器</string>
+    <string name="Sensor_TYPE_GYROSCOPE">陀螺仪传感器</string>
+    <string name="Sensor_TYPE_LIGHT">光线传感器</string>
+    <string name="Sensor_TYPE_PRESSURE">压力传感器</string>
+    <string name="Sensor_TYPE_TEMPERATURE">温度传感器</string>
+    <string name="Sensor_TYPE_PROXIMITY">接近传感器</string>
+    <string name="Sensor_TYPE_GRAVITY">重力传感器</string>
+    <string name="Sensor_TYPE_LINEAR_ACCELERATION">线性加速度传感器</string>
+    <string name="Sensor_TYPE_ROTATION_VECTOR">旋转矢量传感器</string>
+    <string name="Sensor_TYPE_RELATIVE_HUMIDITY">相对湿度传感器</string>
+    <string name="Sensor_TYPE_AMBIENT_TEMPERATURE">环境温度传感器</string>
+    <string name="Sensor_TYPE_MAGNETIC_FIELD_UNCALIBRATED">磁场传感器(未校准)</string>
+    <string name="Sensor_TYPE_GAME_ROTATION_VECTOR">游戏旋转矢量传感器</string>
+    <string name="Sensor_TYPE_GYROSCOPE_UNCALIBRATED">陀螺仪传感器(未校准)</string>
+    <string name="Sensor_TYPE_SIGNIFICANT_MOTION">特殊动作触发传感器</string>
+    <string name="Sensor_TYPE_STEP_COUNTER">计步器</string>
+    <string name="Sensor_TYPE_STEP_DETECTOR">步数探测传感器</string>
+    <string name="Sensor_TYPE_GEOMAGNETIC_ROTATION_VECTOR">地磁旋转矢量传感器</string>
+    <string name="Sensor_TYPE_HEART_RATE">心率传感器</string>
+    <string name="Sensor_TYPE_HEART_BEAT">心跳传感器</string>
+    <string name="Sensor_TYPE_POSE_6DOF">POSE_6DOF传感器</string>
+    <string name="Sensor_TYPE_STATIONARY_DETECT">静止检测传感器</string>
+    <string name="Sensor_TYPE_MOTION_DETECT">运动检测传感器</string>
+    <string name="Sensor_TYPE_LOW_LATENCY_OFFBODY_DETECT">低延迟身体检测传感器</string>
+    <string name="Sensor_TYPE_ACCELEROMETER_UNCALIBRATED">加速度传感器(未校准)</string>
+    <string name="taskSensorNeedRemind">任务传感器要求不满足，无法接取任务</string>
+    <string name="Task_Detail_sensorNeed">传感器：</string>
+    <string name="Activity_sqlitedata_title">传感器数据</string>
+    <string name="Activity_setting_sensordata_title">感知数据</string>
+    <string name="setting_sensorData_chuanganqishuju">传感器数据</string>
+    <string name="setting_sensorData_dangqianshujushuliang">当前感知数据数量:</string>
+    <string name="setting_sensorData_qingliganzhishuju">清理数据</string>
+    <string name="Activity_setting_sensordatafunciton_title">感知功能</string>
+    <string name="setting_sensorData_delete_step1">请选择待清除的传感器</string>
+    <string name="setting_sensorData_delete_step2">请选择删除时间段</string>
+    <string name="startTime">起始时间：</string>
+    <string name="chooseTime">点击选择时间</string>
+    <string name="sensorType">传感器类型:</string>
+    <string name="sensorTime">感知时间:</string>
+    <string name="senseData">感知数据:</string>
+    <string name="no_more_sqlitedata">无更多的数据</string>
+    <string name="all">全部</string>
+    <string name="delSensorDataRemind">删除感知数据</string>
+    <string name="sensorIdentifyError">传感器识别错误</string>
+    <string name="setting_sensorData_kaiqiguanbiganzhi">开启/关闭感知</string>
+    <string name="setting_sensorData_baocunshuju">保存数据</string>
+    <string name="fragment_publish_template2_minor">选择各类传感器</string>
+
+</resources>

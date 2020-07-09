@@ -1,0 +1,3 @@
+include ':Sense_Function'
+include ':app'
+rootProject.name = "CrowdOS_SenseFunction"
