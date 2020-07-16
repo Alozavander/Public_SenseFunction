@@ -1,6 +1,7 @@
 package com.example.sense_function.sensorFunction;
 
 
+import android.app.Activity;
 import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
@@ -40,7 +41,7 @@ public class SenseFunction {
     public SenseHelper sh;
     public SQLiteDatabase mReadableDatabase;
 
-    /* Context 有待测试 application or 任意Activity */
+    /* 绑定/启动Service服务的Activity的Context */
     public SenseFunction(Context pContext) {
         mContext = pContext;
     }
@@ -70,7 +71,7 @@ public class SenseFunction {
         } else {
             Log.i(TAG, "===============sensorService connection exits.================");
         }
-        isBind = mContext.bindService(intent, conn, BIND_AUTO_CREATE);
+        isBind = mContext.getApplicationContext().bindService(intent, conn, BIND_AUTO_CREATE);
         Log.i(TAG, "=============SensorService has been bound :" + isBind + "==============");
     }
 
