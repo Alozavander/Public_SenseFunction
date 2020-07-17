@@ -1,5 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.sense_function">
-
-    /
+    <application>
+        <service android:name=".sensorFunction.SensorService"/>
+    </application>
 </manifest>
