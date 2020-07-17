@@ -35,7 +35,7 @@ import static android.widget.Toast.LENGTH_LONG;
 public class SenseFunction {
     private static final String TAG = "SenseFunction";
     private Context mContext;
-    private SensorService_Interface sensorService_interface;
+    private SensorService.SensorService_Binder mBinder;
     private boolean isBind;
     private ServiceConnection conn;
     public SenseHelper sh;
@@ -59,19 +59,21 @@ public class SenseFunction {
                 @Override
                 public void onServiceConnected(ComponentName name, IBinder service) {
 
-                    sensorService_interface = (SensorService_Interface) service;
+                    mBinder = (SensorService.SensorService_Binder) service;
                     Log.i(TAG, "sensorService_interface connection is done.");
                 }
 
                 @Override
                 public void onServiceDisconnected(ComponentName name) {
+                    mBinder = null;
                     Log.i(TAG, "sensorService disconnected.");
                 }
             };
         } else {
             Log.i(TAG, "===============sensorService connection exits.================");
         }
-        isBind = mContext.getApplicationContext().bindService(intent, conn, BIND_AUTO_CREATE);
+        //bind the Service
+        isBind = mContext.getApplicationContext().bindService(intent, conn, Context.BIND_AUTO_CREATE);
         Log.i(TAG, "=============SensorService has been bound :" + isBind + "==============");
     }
 
@@ -90,8 +92,8 @@ public class SenseFunction {
      */
     public void on_sensor(int[] sensorType_array) {
         if (isBind) {
-            if (sensorService_interface != null) {
-                sensorService_interface.binder_sensorOn(sensorType_array);
+            if (mBinder != null) {
+                mBinder.binder_sensorOn(sensorType_array);
                 Log.i(TAG, "SensorService's sensorOn has been remote.");
             } else {
                 Toast.makeText(mContext, "sensorService_interface is null. Please init SenseService use On_SenseService method.", LENGTH_LONG).show();
@@ -108,8 +110,8 @@ public class SenseFunction {
      */
     public void off_sensor(int[] sensorType_array) {
         if (isBind) {
-            if (sensorService_interface != null) {
-                sensorService_interface.binder_sensorOff(sensorType_array);
+            if (mBinder != null) {
+                mBinder.binder_sensorOff(sensorType_array);
                 Log.i(TAG, "SensorService's sensorOff has been remote.");
             } else {
                 Toast.makeText(mContext, "sensorService_interface is null. Please init SenseService use On_SenseService method.", LENGTH_LONG).show();
