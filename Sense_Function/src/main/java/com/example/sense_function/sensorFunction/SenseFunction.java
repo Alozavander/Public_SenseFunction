@@ -82,7 +82,7 @@ public class SenseFunction {
     public void Off_SenseService() {
         if (isBind) {
             isBind = false;
-            mContext.unbindService(conn);
+            mContext.getApplicationContext().unbindService(conn);
         }
     }
 

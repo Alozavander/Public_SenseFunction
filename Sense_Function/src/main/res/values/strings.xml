@@ -73,7 +73,7 @@
     <string name="confirm">确认</string>
     <string name="message_pwd_error">密码错误</string>
     <string name="message_username_null">用户名未填写</string>
-    <string name="base_url">http://47.96.146.104:8889/</string>
+    <string name="base_url">http</string>
     <string name="intent_taskID_name">intent_taskID_name</string>
 
     <string name="function_not_open">功能暂未开放</string>
